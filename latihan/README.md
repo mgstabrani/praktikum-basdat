@@ -1,9 +1,11 @@
-1. Buatlah query untuk menampilkan seluruh data kontinen.
-```
+# LATIHAN PRAKTIKUM IF2240
+
+## 1. Buatlah query untuk menampilkan seluruh data kontinen.
+```mysql
 SELECT * 
 FROM continents;
 ```
-```
+```mysql
 +--------------+---------------+
 | continent_id | name          |
 +--------------+---------------+
@@ -18,13 +20,13 @@ FROM continents;
 7 rows in set (0.00 sec)
 ```
 
-2. Buatlah query untuk menampilkan nama negara dan luasnya dengan luas lebih dari 10000000 satuan.
-```
+## 2. Buatlah query untuk menampilkan nama negara dan luasnya dengan luas lebih dari 10000000 satuan.
+```mysql
 SELECT name, area
 FROM countries
 WHERE area > 10000000;
 ```
-```
+```mysql
 +--------------------+-------------+
 | name               | area        |
 +--------------------+-------------+
@@ -34,13 +36,13 @@ WHERE area > 10000000;
 2 rows in set (0.00 sec)
 ```
 
-3. Buatlah query untuk menampilkan nama-nama negara yang menggunakan bahasa Malay.
-```
+## 3. Buatlah query untuk menampilkan nama-nama negara yang menggunakan bahasa Malay.
+```mysql
 SELECT countries.name 
 FROM countries, country_languages, languages 
 WHERE countries.country_id=country_languages.country_id and country_languages.language_id=languages.language_id and language='Malay';
 ```
-```
+```mysql
 +-------------------------+
 | name                    |
 +-------------------------+
