@@ -1,5 +1,8 @@
 # LATIHAN PRAKTIKUM IF2240
 
+## Database Schema
+![Database Schema](https://github.com/mgstabrani/praktikum-basdat/blob/main/latihan/Screenshot%20from%202021-03-14%2011-33-30.png)
+
 ## 1. Buatlah query untuk menampilkan seluruh data kontinen.
 ```mysql
 SELECT * 
