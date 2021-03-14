@@ -1,5 +1,8 @@
 # IF2240 Praktikum-1
 
+## Database Schema
+![Database Schema](https://github.com/mgstabrani/praktikum-basdat/blob/main/praktikum1/database-schema.png)
+
 ## 1. Buatlah query yang menampilkan nama lengkap (full_name), tanggal lahir, jenis kelamin, dan nama departemen dari manajer perusahaan yang mulai bekerja pada tahun 1985!
 ```mysql
 SELECT CONCAT(a.first_name, ' ', a.last_name) as full_name, a.birth_date, a.gender, c.dept_name 
